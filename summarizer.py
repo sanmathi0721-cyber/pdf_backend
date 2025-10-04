@@ -2,7 +2,7 @@ from transformers import pipeline
 from pdfminer.high_level import extract_text
 
 # Load summarizer only once
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 def extract_text_from_pdf(path):
     return extract_text(path)
